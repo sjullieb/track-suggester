@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+  $("input#name").focus();
+
   $("#mainForm").submit(function(event) {
 
 //    alert("hi");
@@ -20,6 +23,8 @@ $(document).ready(function() {
         $("#design").fadeIn(1500);
       }else if (developInput === "mobile") {
         $("#java").show();
+        $(".j-mobile").show();
+        $(".j-soft").hide();
       }
       else if (sizeInput === "big" && developInput === "soft") {
         $("#c").show();
@@ -29,6 +34,8 @@ $(document).ready(function() {
       }
       else {
         $("#java").show();
+        $(".j-mobile").hide();
+        $(".j-soft").show();
       }
     }
     else {
