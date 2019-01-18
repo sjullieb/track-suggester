@@ -10,16 +10,16 @@
   </head>
   <body>
     <div class="container">
-      <div class="questions">
 
+      <h2>Welcome to the track suggester!</h2>
 
-        <h2>Welcome to the track suggester!</h2>
+      <div id="questions">
 
         <h3>Not sure what programming course to take? <br>
           We can help you to make the right choice!</h3>
         <h3>Just answer the following questions.</h3>
 
-        <form id="mainForm" class="">
+        <form id="mainForm">
 
           <div class="form-group">
             <label for="name">Your name</label>
@@ -97,7 +97,7 @@
               <div class="radio">
                 <label>
                   <input type="radio" name="specialist" value="narrow">
-                  a specialist in not so popular, but highly dstrongand language.
+                  a specialist in not so popular, but highly paid language.
                 </label>
               </div>
           </div>
@@ -129,7 +129,7 @@
         </form>
       </div>
 
-      <div class="results">
+      <div id="results">
 
         <div class="result-header">
           <h3>Dear <span class="name"></span></h3>
@@ -137,22 +137,22 @@
           <p>Here are your results!</p>
         </div>
 
-        <div class="design">
+        <div class="track" id="design">
           <h3><strong>CSS/Design</strong> track will fit you the best!</h3>
         </div>
-        <div class="c#">
+        <div class="track" id="c">
           <h3>You should definitely take <strong>C#/.NET</strong> track!</h3>
         </div>
-        <div class="java">
+        <div class="track" id="java">
           <h3><strong>Java/Android</strong> track is the right for you!</h3>
         </div>
-        <div class="ruby">
+        <div class="track" id="ruby">
           <h3>Hurry up to take <strong>Ruby/Rails</strong> track! That's the one you need to learn!</h3>
         </div>
 
         <div class="result-footer">
           <p>Keep in mind: all languages have similarities, and switching between languages and platforms is very common.</p>
-          <button type="button" class="btn">Start over the questionary again</button>
+          <button id="btnReset" type="button" class="btn">Start over the questionary again</button>
         </div>
 
       </div>
