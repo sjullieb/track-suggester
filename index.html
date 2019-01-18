@@ -11,17 +11,17 @@
   <body>
     <div class="container">
 
-      <h2>Welcome to the track suggester!</h2>
+      <h1>Welcome to the track suggester!</h1>
 
       <div id="questions">
-
-        <h3>Not sure what programming course to take? <br>
-          We can help you to make the right choice!</h3>
-        <img src="img/dev.jpg" alt="A picture of developer">
-        <h3>Just answer the following questions to see the best best track for you</h3>
+        <div id="top-section">
+          <h3>Not sure what programming course to take? <br>
+            We can help you to make the right choice!</h3>
+          <img src="img/dev.jpg" alt="A picture of developer">
+          <h3>Just answer the following questions to see the track that fits you the best!</h3>
+        </div>
 
         <form id="mainForm">
-
           <div class="form-group">
             <label for="name">Your name</label>
             <input id="name" class="form-control" type="text">
@@ -125,15 +125,18 @@
               </div>
           </div>
 
-          <button type="submit" class="btn">Show the results!</button>
+          <div class="centered">
+            <button type="submit" class="btn btn-lg">Show the results</button>
+          </div>
 
         </form>
+
       </div>
 
       <div id="results">
 
         <div class="result-header">
-          <h3>Dear <span class="name"></span></h3>
+          <h3>Dear <strong><span class="name"></span></strong>,</h3>
           <p>Thank you for completing our questionary.</p>
           <p>Here are your results!</p>
         </div>
@@ -156,9 +159,12 @@
           <h3>Hurry up to take <strong>Ruby/Rails</strong> track! That's the one you need to learn!</h3>
         </div>
 
-        <div class="result-footer">
-          <p>Keep in mind: all languages have similarities, and switching between languages and platforms is very common.</p>
-          <button id="btnReset" type="button" class="btn">Start over the questionary again</button>
+        <div class="result-footer centered">
+          <p>
+            <br>
+            Keep in mind: all languages have similarities, and switching between languages and platforms is very common.<br>
+          </p>
+          <button id="btnReset" type="button" class="btn btn-lg">Start over the questionary again</button>
         </div>
 
       </div>

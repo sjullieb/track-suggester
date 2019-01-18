@@ -12,6 +12,8 @@ $(document).ready(function() {
     var specialistInput = $("input:radio[name=specialist]:checked").val();
     var frameworkInput = $("input:radio[name=framework]:checked").val();
 
+    var fadeInTime = 2000;
+
     if (nameInput) {
       $(".name").text(nameInput);
 
@@ -20,20 +22,20 @@ $(document).ready(function() {
       $("#questions").hide();
 
       if (focusInput === "front") {
-        $("#design").fadeIn(1500);
+        $("#design").fadeIn(fadeInTime);
       }else if (developInput === "mobile") {
-        $("#java").show();
+        $("#java").fadeIn(fadeInTime);
         $(".j-mobile").show();
         $(".j-soft").hide();
       }
       else if (sizeInput === "big" && developInput === "soft") {
-        $("#c").show();
+        $("#c").fadeIn(fadeInTime);
       }
       else if (specialistInput === "narrow" && (sizeInput !== "big")) {
-        $("#ruby").show();
+        $("#ruby").fadeIn(fadeInTime);
       }
       else {
-        $("#java").show();
+        $("#java").fadeIn(fadeInTime);
         $(".j-mobile").hide();
         $(".j-soft").show();
       }

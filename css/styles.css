@@ -7,5 +7,39 @@
 }
 
 img {
+  background-color: white;
+  border: 5px solid #E0624C; //#d13c3c;
+  border-radius: 4px;
+  //padding: 3px;
+  margin: 20px;
   width : 400px;
+}
+
+body {
+  background-color: #f2ce41;//#f29f41;
+  color: brown;
+  font-size: 20px;
+}
+
+#results, #top-section, .centered {
+  text-align: center;
+}
+
+.btn{
+  font-size: 25px;
+  font-weight: bold;
+  border: 5px solid #E0624C;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  margin: 20px;
+}
+
+form {
+  margin: 10px;
 }
