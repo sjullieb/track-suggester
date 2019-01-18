@@ -9,25 +9,31 @@ $(document).ready(function() {
     var specialistInput = $("input:radio[name=specialist]:checked").val();
     var frameworkInput = $("input:radio[name=framework]:checked").val();
 
-    $(".name").text(nameInput);
+    if (nameInput) {
+      $(".name").text(nameInput);
 
-    $(".track").hide();
-    $("#results").show();
-    $("#questions").hide();
+      $(".track").hide();
+      $("#results").show();
+      $("#questions").hide();
 
-    if (focusInput === "front") {
-      $("#design").show();
-    }else if (developInput === "mobile") {
-      $("#java").show();
-    }
-    else if (sizeInput === "big" && developInput === "soft") {
-      $("#c").show();
-    }
-    else if (specialistInput === "narrow" && (sizeInput !== "big")) {
-      $("#ruby").show();
+      if (focusInput === "front") {
+        $("#design").fadeIn(1500);
+      }else if (developInput === "mobile") {
+        $("#java").show();
+      }
+      else if (sizeInput === "big" && developInput === "soft") {
+        $("#c").show();
+      }
+      else if (specialistInput === "narrow" && (sizeInput !== "big")) {
+        $("#ruby").show();
+      }
+      else {
+        $("#java").show();
+      }
     }
     else {
-      $("#java").show();
+      alert("Please fill in your name!");
+      $("input#name").focus();
     }
 
     event.preventDefault();
