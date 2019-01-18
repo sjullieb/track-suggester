@@ -28,11 +28,11 @@ $(document).ready(function() {
         $(".j-mobile").show();
         $(".j-soft").hide();
       }
-      else if (sizeInput === "big" && developInput === "soft") {
-        $("#c").fadeIn(fadeInTime);
-      }
-      else if (specialistInput === "narrow" && (sizeInput !== "big")) {
+      else if (specialistInput === "narrow") {
         $("#ruby").fadeIn(fadeInTime);
+      }
+      else if ((sizeInput === "big" && developInput === "soft") || (frameworkInput === "no")) {
+        $("#c").fadeIn(fadeInTime);
       }
       else {
         $("#java").fadeIn(fadeInTime);
@@ -49,6 +49,10 @@ $(document).ready(function() {
   });
 
   $("#btnReset").click(function(){
-    location.reload();
+    //location.reload();
+    $("#results").hide();
+    $(".track").hide();
+    $("#questions").show();
+
   });
 });
