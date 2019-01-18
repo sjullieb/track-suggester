@@ -9,6 +9,118 @@
     <title>Track suggester</title>
   </head>
   <body>
+    <div class="container">
+      <h2>Welcome to the track suggester!</h2>
 
+
+      <form id="mainForm" class="">
+
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="focus">1. What do you tend to do more?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="focus" value="back" checked>
+                Back-end development
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="focus" value="front">
+                Front-end development
+              </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+          <label for="size">2. What company size do you prefer work in?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="any" checked>
+                Any size
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="big">
+                Big
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="small">
+                Small
+              </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+          <label for="develop">3. What would you like to build?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="develop" value="soft" checked>
+                Software
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="develop" value="mobile">
+                Mobile applications
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="develop" value="web">
+                Web applications
+              </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+          <label for="specialist">4. Would you rather become</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="specialist" value="wide" checked>
+                a specialist on a very popular language.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="specialist" value="narrow">
+                a specialist in not so popular, but highly demand language.
+              </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+          <label for="framework">5. Do you enjoy working with frameworks?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="framework" value="yes" checked>
+                Yes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="framework" value="no">
+                No
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="framework" value="na">
+                What is this?
+              </label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn">Show the results!</button>
+
+      </form>
+    </div>
   </body>
 </html>
