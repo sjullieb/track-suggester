@@ -18,8 +18,8 @@ $(document).ready(function() {
       $(".name").text(nameInput);
 
       $(".track").hide();
-      $("#results").show();
-      $("#questions").hide();
+      //$("#results").show();
+      //$("#questions").hide();
 
       if (focusInput === "front") {
         $("#design").fadeIn(fadeInTime);
@@ -39,20 +39,27 @@ $(document).ready(function() {
         $(".j-mobile").hide();
         $(".j-soft").show();
       }
+      $("#result-modal").modal("show");
     }
     else {
-      alert("Please fill in your name!");
-      $("input#name").focus();
+      //alert("Please fill in your name!");
+      //$("input#name").focus();
+
+      $("#fill-name-modal").modal("show");
     }
 
     event.preventDefault();
   });
 
   $("#btnReset").click(function(){
-    //location.reload();
-    $("#results").hide();
+    //$("#results").hide();
     $(".track").hide();
-    $("#questions").show();
+    //$("#questions").show();
 
   });
+
+  $("#fill-name-modal").on("hidden.bs.modal", function (){
+     $("input#name").focus();
+   });
+
 });

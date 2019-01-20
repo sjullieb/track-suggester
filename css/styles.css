@@ -1,6 +1,6 @@
-#results {
+/* #results {
   display: none;
-}
+} */
 
 .track {
   display: none;
@@ -21,7 +21,7 @@ body {
   font-size: 20px;
 }
 
-#results, #top-section, .centered {
+#results, #top-section, #fill-name-modal, .centered {
   text-align: center;
 }
 
@@ -43,3 +43,14 @@ h3 {
 form {
   margin: 10px;
 }
+
+.modal-body {
+  padding: 0, 20px, 0, 20px;
+}
+/* .modal{
+  position: absolute;
+  float: left;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+} */

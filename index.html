@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css"> -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.3.1.js"></script>
+    <!-- <script src="js/jquery-3.3.1.js"></script> -->
+    <!-- <script src="js/bootstrap.js"></script> -->
     <script src="js/scripts.js"></script>
 
     <title>Track suggester</title>
@@ -132,42 +136,86 @@
 
       </div>
 
-      <div id="results">
+      <div id="result-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-        <div class="result-header">
-          <h1>Dear <strong><span class="name"></span></strong>,</h1>
-          <p>Thank you for completing our questionary.</p>
-          <p>Here is your result!</p>
-        </div>
+          <!-- Modal content-->
+          <div class="modal-content">
+            <!-- <div class="modal-header">
 
-        <div class="track" id="design">
-          <img src="img/design.jpg" alt="A picture of CSS/Design">
-          <h3><strong>CSS/Design</strong> track will fit you the best!</h3>
-        </div>
-        <div class="track" id="c">
-          <img src="img/c.jpg" alt="A picture of C# developer">
-          <h3>You should definitely take <strong>C#/.NET</strong> track!</h3>
-        </div>
-        <div class="track" id="java">
-          <img class="j-mobile" src="img/java.png" alt="A picture of Andriod developer">
-          <img class="j-soft" src="img/java3.png" alt="A picture of Java developer">
-          <h3><strong>Java/Android</strong> track is the right for you!</h3>
-        </div>
-        <div class="track" id="ruby">
-          <img src="img/ruby.jpg" alt="A picture of Ruby developer">
-          <h3>Hurry up to take <strong>Ruby/Rails</strong> track! That's the one you need to learn!</h3>
-        </div>
+              <h4 class="modal-title">Modal Header</h4>
+            </div> -->
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <div id="results">
 
-        <div class="result-footer centered">
-          <p>
+                <div class="result-header">
+                  <h1>Dear <strong><span class="name"></span></strong>,</h1>
+                  <p>Thank you for completing our questionary.</p>
+                  <p>Here is your result!</p>
+                </div>
+
+                <div class="track" id="design">
+                  <img src="img/design.jpg" alt="A picture of CSS/Design">
+                  <h3><strong>CSS/Design</strong> track will fit you the best!</h3>
+                </div>
+                <div class="track" id="c">
+                  <img src="img/c.jpg" alt="A picture of C# developer">
+                  <h3>You should definitely take <strong>C#/.NET</strong> track!</h3>
+                </div>
+                <div class="track" id="java">
+                  <img class="j-mobile" src="img/java.png" alt="A picture of Andriod developer">
+                  <img class="j-soft" src="img/java3.png" alt="A picture of Java developer">
+                  <h3><strong>Java/Android</strong> track is the right for you!</h3>
+                </div>
+                <div class="track" id="ruby">
+                  <img src="img/ruby.jpg" alt="A picture of Ruby developer">
+                  <h3>Hurry up to take <strong>Ruby/Rails</strong> track! That's the one you need to learn!</h3>
+                </div>
+
+                <div class="result-footer centered">
+                  <p>
+                    <br>
+                    Keep in mind: all languages have similarities, and switching between languages and platforms is very common.<br>
+                  </p>
+                  <button id="btnReset" type="button" class="btn btn-lg" data-dismiss="modal">Back</button>
+                </div>
+
+              </div>
+
+              <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>       -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+    <!-- Modal -->
+    <div id="fill-name-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <!-- <div class="modal-header">
+
+            <h4 class="modal-title">Modal Header</h4>
+          </div> -->
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
             <br>
-            Keep in mind: all languages have similarities, and switching between languages and platforms is very common.<br>
-          </p>
-          <button id="btnReset" type="button" class="btn btn-lg">Start over the questionary again</button>
+            <h3>Please fill in your name!</h3>
+            <br>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+          <!-- <div class="modal-footer">
+
+          </div> -->
         </div>
 
       </div>
-
     </div>
   </body>
 </html>
