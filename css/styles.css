@@ -46,6 +46,7 @@ form {
 
 .modal-body {
   padding: 0, 20px, 0, 20px;
+  background: #C9EA88;/*#BFEB65;#CCDEBC; */
 }
 /* .modal{
   position: absolute;
